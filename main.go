@@ -68,7 +68,7 @@ func telegramBot() {
 				}
 			}
 			username := update.Message.From.UserName
-			if strings.HasPrefix(update.Message.Text, "#заявки") || strings.HasPrefix(update.Message.Text, "#Заявки") && strings.EqualFold(username, "fanatkakishlakadddd") {
+			if strings.HasPrefix(update.Message.Text, "#заявки") || strings.HasPrefix(update.Message.Text, "#Заявки") && strings.EqualFold(username, "AlexanderChekmarev") {
 				rows, err := db.Query("SELECT * FROM journal")
 				if err != nil {
 					panic(err)
